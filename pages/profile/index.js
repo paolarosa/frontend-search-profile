@@ -51,8 +51,13 @@ function createCardUser(object) {
     tagButtonEmail.href = object.email
     tagButtonUser.classList.add("button-changeuser")
     tagButtonUser.innerText = "Trocar de usuário"
-    tagButtonUser.href = "http://127.0.0.1:5500/gitSearchBase-paolarosa/pages/home/index.html"
+    tagButtonUser.href = "../home/index.html"
    /*  tagButtonUser.target = "_blank" */
+
+    tagImg.addEventListener("click",()=>{
+        window.open(object.html_url)
+        
+    })
 
     tagNav.append(tagButtonEmail, tagButtonUser)
     divInfo.append(tagName, tagJob)

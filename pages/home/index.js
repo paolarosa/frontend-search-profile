@@ -41,7 +41,7 @@ function requisitionOpen() {
         .then((response) => {
             if (response.message == "Not Found") {
                 catchError()
-            } else { window.location.replace("http://127.0.0.1:5500/gitSearchBase-paolarosa/pages/profile/index.html") }
+            } else { window.location.replace("../profile/index.html") }
 
         })
 }
@@ -90,6 +90,7 @@ function renderLasts(object) {
     })
     divImgButton.append(img)
     div.appendChild(divImgButton)
+    return divImgButton
 
 }
 
